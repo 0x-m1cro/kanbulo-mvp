@@ -13,6 +13,24 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 You can start editing the experience by modifying `app/page.tsx` or the product data in `data/products.ts`. The page auto-updates as you edit the file.
 
+### Journal (Shopify Blog)
+
+The `/journal` and `/journal/[handle]` routes fetch from the Shopify Storefront API when credentials are provided, falling back to local seed stories otherwise.
+
+Set these env variables for live Shopify content:
+
+```
+SHOPIFY_STORE_DOMAIN=<your-store>.myshopify.com
+SHOPIFY_STOREFRONT_TOKEN=<storefront-access-token>
+SHOPIFY_STOREFRONT_API_VERSION=2024-10
+SHOPIFY_JOURNAL_HANDLE=kanbulo-journal
+NEXT_PUBLIC_SITE_URL=https://your-site.example
+```
+
+### Gifting
+
+`/cart` simulates gift message + keepsake box cart attributes and builds the Printful notes string. Message length is capped at 250 characters.
+
 ## Testing & linting
 
 ```bash

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { ThemeProvider } from "@/components/theme/ThemeProvider";
+import { NavBar } from "@/components/NavBar";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -16,7 +17,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="antialiased bg-shell-50 text-coffee-900 font-sans">
-        <ThemeProvider>{children}</ThemeProvider>
+        <ThemeProvider>
+          <NavBar />
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );
