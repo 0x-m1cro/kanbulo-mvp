@@ -12,15 +12,15 @@ export default function Home() {
       <header className="grid items-center gap-10 rounded-[32px] border border-rose-100/70 bg-white/80 p-8 shadow-velvet backdrop-blur-sm lg:grid-cols-[1.1fr_0.9fr]">
         <div className="space-y-6">
           <p className="text-sm font-semibold uppercase tracking-[0.3em] text-coffee-700">
-            Tenderness, Care, Integrity
+            Tenderness, Warmth, Care
           </p>
           <h1 className="font-display text-4xl text-coffee-900 lg:text-5xl">
-            A headless boutique that feels gentle from first pixel to checkout.
+            Made with tenderness, guided by calm routines.
           </h1>
           <p className="text-lg text-coffee-800">
-            Kanbulo abstracts the factory floor behind a velvet curtain. Each
-            interaction is slowed with intention, honoring calm parenting
-            rhythms while Shopify quietly handles the commerce below.
+            Each Kanbulo piece begins with soft fabrics and unhurried motion.
+            We keep partners behind the velvet curtain so every touchpoint feels
+            like a held whisper—from first pixel to the moment it arrives.
           </p>
           <div className="flex flex-wrap items-center gap-3">
             <Button>Reserve a look</Button>
@@ -29,8 +29,8 @@ export default function Home() {
             </Link>
           </div>
           <div className="flex flex-wrap gap-4 text-sm text-coffee-800">
-            <BadgeChip label="Soft launch · v0.1.0" />
-            <BadgeChip label="App Router + Tailwind 4" />
+            <BadgeChip label="Soft fabrics, intentional design" />
+            <BadgeChip label="Calm pacing, eased motion" />
             <BadgeChip label="Brand language enforced" />
           </div>
         </div>
@@ -74,7 +74,7 @@ export default function Home() {
               Featured pieces
             </p>
             <h2 className="font-display text-3xl text-coffee-900">
-              Slow crafted, compliance ready
+              Slow-crafted essentials, compliance ready
             </h2>
           </div>
           <Link href="/products/blush-cloud-wrap" className="soft-underline">
